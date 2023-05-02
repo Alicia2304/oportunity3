@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos al sistema de registro escolar</h1>
+        <h2>Universidad Autónoma de Baja California</h2>
+        <img src="treslogos.png" alt="">
+    </header>
+
+    <div class="search">
+        <input type="text" id="txtbusqueda" placeholder="buscar estudiante">
+        <button onclick="buscarpormatricula();">busqueda</button>
+    </div>
+
+    <main class="container">
+        <h3>Registrar nuevo estudiante</h3>
+
+        <div class="formulario">
+            <!--matricula, Nombre, correo, Genero, campus, calificacion A, calificacion B, calificacion C-->
+            <input type="text" placeholder="Ingresa nombre del alumno" id="txtNombre">
+            <input type="text" placeholder="ingresa el correo" id="txtCorreo">
+
+            <select id="selGenero" class="form.select">
+                <option value=""disabled selected>--Selecciona un género--</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Indefinido">Prefiero no mencionarlo...</option>
+            </select>
+
+            <select id="selCampus" class="form.select">
+                <option selected> Selecciona un campus</option>
+                <option value="Tijuana">Tijuana</option>
+                <option value="Mexicali">Mexicali</option>
+                <option value="Ensenada">Ensenada</option>
+            </select>
+
+            <input type="number" placeholder="ingresa calificacion A" id="califA">
+            <input type="number" placeholder="ingresa calificacion B" id="califB">
+            <input type="number" placeholder="ingresa calificacion C" id="califC">
+
+            <button class= "btn btn-success" onclick="registrar();">Registrar</button>
+        </div>
+ 
+    </main>
+    <section class="container">
+        <h2>Lista de estudiantes</h2>
+        <table class="Table">
+            <thead>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Género</th>
+                <th>Campus</th>
+                <th>calificacion A</th>
+                <th>calificacion B</th>
+                <th>calificacion C</th>
+                <th>promedio</th>
+                <th></th>
+            </thead>
+            <tbody id="alumnosTabla">
+
+
+         </tbody>
+        </table>
+    </section>
+
+    <script src="scripts/register.js"></script>
+
+</body>
+</html>

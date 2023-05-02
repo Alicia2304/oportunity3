@@ -1,0 +1,42 @@
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+
+}
+
+h2{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container{
+    background-color: #dedede;
+    padding: 20px;
+}
+/*combined selectors
+space=dentro*/
+.container .btn{
+    background-color: green;
+}
+
+.btn.error{
+    color: goldenrod;
+    margin-top: 10px
+}
+
+button{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.search{
+    margin-bottom: 20px;
+}
+
+div{
+    text-align: center;
+}
+
+
